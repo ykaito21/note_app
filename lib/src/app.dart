@@ -82,7 +82,7 @@ class _AppState extends State<App> {
             return supportedLocale;
           }
         }
-        return supportedLocales.last;
+        return supportedLocales.first;
       },
     );
   }

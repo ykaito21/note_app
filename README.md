@@ -1,16 +1,15 @@
-# note_app
+# Note
 
-A new Flutter project.
+Note is a simple note app built with Flutter. Note will be autosave and persistent with hive package like Native Note App.
 
-## Getting Started
+<img src="gif/note.gif" width="200">
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Building and installing
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+git clone https://github.com/ykaito21/note_app.git
+cd dribbbly_todo
+flutter run
+```
+The `flutter run` command both builds and installs the Flutter app to your device or emulator.

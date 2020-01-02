@@ -15,6 +15,9 @@ class NoteBloc {
       if (note.content.isNotEmpty) {
         print('saved');
         notesBox.put(note.id, note);
+      } else {
+        print('deleted');
+        notesBox.delete(note.id);
       }
     });
     //     .switchMap(
