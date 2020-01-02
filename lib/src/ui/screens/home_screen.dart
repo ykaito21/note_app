@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
+import '../../../app_localizations.dart';
 import 'package:uuid/uuid.dart';
 import '../../core/models/note_model.dart';
 import '../screens/write_screen.dart';
@@ -38,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                         horizontal: 20.0,
                       ),
                       child: Text(
-                        'Notes',
+                        AppLocalizations.of(context).translate('title'),
                         style: TextStyle(
                           fontSize: 40.0,
                           fontWeight: FontWeight.bold,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive/hive.dart';
 
+import '../app_localizations.dart';
 import 'ui/screens/home_screen.dart';
 
 class App extends StatefulWidget {
@@ -63,6 +65,25 @@ class _AppState extends State<App> {
             );
         },
       ),
+
+      supportedLocales: const [
+        Locale('en', 'US'),
+        Locale('ja', 'JP'),
+      ],
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      localeResolutionCallback: (locale, supportedLocales) {
+        for (var supportedLocale in supportedLocales) {
+          if (supportedLocale.languageCode == locale?.languageCode &&
+              supportedLocale.countryCode == locale?.countryCode) {
+            return supportedLocale;
+          }
+        }
+        return supportedLocales.last;
+      },
     );
   }
 

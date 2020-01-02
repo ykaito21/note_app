@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import '../../../app_localizations.dart';
 import '../../core/blocs/note_bloc.dart';
 import '../../core/models/note_model.dart';
 
@@ -47,7 +48,7 @@ class _WriteScreenState extends State<WriteScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Note',
+          AppLocalizations.of(context).translate('subTitle'),
           style: TextStyle(
             color: Colors.black,
           ),
