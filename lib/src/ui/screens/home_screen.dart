@@ -25,6 +25,7 @@ class HomeScreen extends StatelessWidget {
       body: WatchBoxBuilder(
           box: Hive.box('notes'),
           builder: (context, notesBox) {
+            //* maybe add orderBy date
             return Container(
               child: ListView.builder(
                 itemCount: notesBox.length + 1,

@@ -17,6 +17,16 @@ class NoteBloc {
         notesBox.put(note.id, note);
       }
     });
+    //     .switchMap(
+    //   (NoteModel note) async* {
+    //     if (note.content.isNotEmpty) {
+    //       print('saved');
+    //       yield notesBox.put(note.id, note);
+    //     }
+    //   },
+    // ).listen(
+    //   (note) => print('call'),
+    // );
   }
 
   Function(NoteModel) get setNote => _contentController.add;

@@ -30,6 +30,15 @@ dependencies:
   hive: ^1.2.0
   hive_flutter: ^0.2.1
   uuid: ^2.0.4
+  flutter_launcher_icons: ^0.7.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/images/memo.png"
+  image_path_ios: "assets/images/memo_ios.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/memo.png"
 
 dev_dependencies:
   flutter_test:
@@ -47,8 +56,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

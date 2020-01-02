@@ -7,6 +7,7 @@ import 'src/core/models/note_model.dart';
 import 'src/app.dart';
 
 void main() async {
+  //todo add intl splash
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   final appDocumentDir = await getApplicationDocumentsDirectory();
