@@ -7,7 +7,7 @@
   <h2 align="center">A simple note app built with Flutter
   </h2>
 
- Note will be autosave and persistent with hive package like native app.
+Note will be autosave and persistent with hive package like native app.
 
 </div>
 
@@ -31,10 +31,5 @@
 
 ## About
 
-This is a small personal project. Any comments and reactions would be awesome!
-
-## Project List
-
-- [Colorful Calculator](https://github.com/ykaito21/colorful_calculator)
-- [Dribbbly](https://github.com/ykaito21/dribbbly_todo)
-- [Note](https://github.com/ykaito21/note_app)
+This is a small personal project. Any comments and reactions would be awesome! Please check
+[other projects](https://github.com/ykaito21/flutter_projects/blob/master/project_list.md) too.
